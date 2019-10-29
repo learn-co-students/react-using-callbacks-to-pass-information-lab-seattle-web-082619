@@ -8,10 +8,16 @@ export default class ColorSelector extends Component {
     })
   )
   
+  onMouseClick =(event)=>{
+    
+  }
+
+
   render() {
     return (
       <div id="colorSelector">
         {this.makeColorSwatches()}
+        onMouseClick={this.handleClick} 
       </div>
     )
   }
